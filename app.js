@@ -52,3 +52,7 @@ window.onload = window.onresize = ()=> {
   gsap.set('.tray', {height:h})
   gsap.set('.pov', {scale:innerHeight/h})
 }
+
+function name(params) {
+  console.log(name)
+}
