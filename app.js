@@ -54,5 +54,5 @@ window.onload = window.onresize = ()=> {
 }
 
 function name(params) {
-  console.log(name)
+  sfasdf
 }
