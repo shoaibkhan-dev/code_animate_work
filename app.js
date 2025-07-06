@@ -53,6 +53,28 @@ window.onload = window.onresize = ()=> {
   gsap.set('.pov', {scale:innerHeight/h})
 }
 
-function name(params) {
-  sfasdf
+
+gsap.timeline()
+  .from('.tray', {yPercent:-3, duration:2, ease:'power1.inOut', yoyo:true, repeat:-1}, 0)
+  .fromTo('.tray', {rotate:-15},{rotate:15, duration:4, ease:'power1.inOut', yoyo:true, repeat:-1}, 0)
+  .from('.die', {duration:0.01, opacity:0, stagger:{each:-0.05, ease:'power1.in'}}, 0)
+  .to('.tray', {scale:1.2, duration:2, ease:'power3.inOut', yoyo:true, repeat:-1}, 0)
+
+window.onload = window.onresize = ()=> {
+  const h = n*56
+  gsap.set('.tray', {height:h})
+  gsap.set('.pov', {scale:innerHeight/h})
+}
+
+
+gsap.timeline()
+  .from('.tray', {yPercent:-3, duration:2, ease:'power1.inOut', yoyo:true, repeat:-1}, 0)
+  .fromTo('.tray', {rotate:-15},{rotate:15, duration:4, ease:'power1.inOut', yoyo:true, repeat:-1}, 0)
+  .from('.die', {duration:0.01, opacity:0, stagger:{each:-0.05, ease:'power1.in'}}, 0)
+  .to('.tray', {scale:1.2, duration:2, ease:'power3.inOut', yoyo:true, repeat:-1}, 0)
+
+window.onload = window.onresize = ()=> {
+  const h = n*56
+  gsap.set('.tray', {height:h})
+  gsap.set('.pov', {scale:innerHeight/h})
 }
